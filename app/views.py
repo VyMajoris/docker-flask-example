@@ -81,7 +81,5 @@ def get_qrimg():
 
 @app.route("/")
 def main():
-    if !preped:
-        return str("must prep first"), 401
-    return render_template('templates/index.html')
+     return "hello world!"
 
