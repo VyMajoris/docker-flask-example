@@ -83,5 +83,5 @@ def get_qrimg():
 def main():
     if !preped:
         return str("must prep first"), 401
-    return render_template('index.html')
+    return render_template('templates/index.html')
 
