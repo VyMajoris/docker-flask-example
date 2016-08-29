@@ -73,7 +73,8 @@ def get_qrimg():
     return string, 200
 
 
-@app.route('/prepare'):
+@app.route('/prepare')
+def prepare:
     requests.request("PUT", fireQueue, data={'queue':0} )
     update_hash_queue()
     preped = True
