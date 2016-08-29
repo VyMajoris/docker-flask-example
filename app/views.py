@@ -82,5 +82,5 @@ def prepare:
 
 @app.route("/")
 def main():
-     return "hello world!"
+	return send_file('./static/index.html')
 
