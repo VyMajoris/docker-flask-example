@@ -6,8 +6,9 @@ MAINTAINER Sebastian Ramirez <tiangolo@gmail.com>
 COPY nginx.conf /etc/nginx/conf.d/
 
 # Add requirements and install
-ADD ./files/requirements.txt /code/
-RUN pip install -r ./requirements.txt
+ADD . /opt/app
+WORKDIR /opt/app
+RUN pip install -r requirements.txt
 
 
 # expose port(s)
